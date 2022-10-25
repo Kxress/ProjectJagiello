@@ -1,6 +1,6 @@
 # Project Jagiello
 
-Autorzy:
+Authors:
 
 lain <br/>
 Flamore <br/>
