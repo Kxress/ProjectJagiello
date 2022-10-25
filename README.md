@@ -1,4 +1,4 @@
-# ProjectJagiello
+# Project Jagiello
 
 Autorzy:
 
