@@ -2,8 +2,8 @@
 
 Autorzy:
 
-lain
-Flamore
-8EAVER
-vay
+lain,
+Flamore,
+8EAVER,
+vay,
 keuewap
