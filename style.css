@@ -8,18 +8,18 @@ body{
 }
 
 div{
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
     opacity: 0;
-    animation: 3s appear forwards;
+    animation: 3s appearnfloat forwards;
 }
 
-#main{
+#header{
     margin: auto;
     text-align: center;
     width: 1000px;
     border: 2px solid white;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 #title{
@@ -27,8 +27,9 @@ div{
     font-weight: bold;
 }
 
-@keyframes appear {
+@keyframes appearnfloat {
     100% {
         opacity: 1;
+        margin-top: 20px;
     }
 }
