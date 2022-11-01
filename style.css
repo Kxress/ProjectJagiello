@@ -13,6 +13,11 @@ div{
     animation: 3s appearnfloat forwards;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
 #header{
     margin: auto;
     text-align: center;
@@ -36,6 +41,33 @@ div{
     border-radius: 10px;
     animation: 3s appear forwards;
     opacity: 0;
+}
+
+#schemat{
+    width: 1474px;
+    height: 2339px;
+}
+
+footer{
+    margin-top: 60px;
+    padding-top: 10px;
+    font-size: 30px;
+    clear: both;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: #8A9BA5;
+}
+
+#autorzy{
+    box-shadow: inset 0 0 0 0 #cacaca;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+#autorzy:hover{
+    box-shadow: inset 160px 0 0 0 #61b0dd;
 }
 
 @keyframes appearnfloat {
