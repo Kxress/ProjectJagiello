@@ -11,19 +11,42 @@
 
     <body>
         <div id="header">
-            <p id=title>Drzewo genealogiczne Jagiellonów</p>
+            <p id=title onclick="expansion()">
+                Drzewo genealogiczne Jagiellonów &raquo;<br/>
+                <span id="disclaimer">(Kliknij po więcej informacji)</span>
+            </p>
+
+            <ul id="lista">
+                <li>&raquo; <a href="info/giedymin.html" class="aInfo">Giedymin</a></li>
+                <li>&raquo; <a href="info/olgierd.html" class="aInfo">Olgierd</a></li>
+                <li>&raquo; <a href="info/kiejstut.html" class="aInfo">Kiejstut</a></li>
+                <li>&raquo; <a href="info/aldona_anna.html" class="aInfo">Aldona Anna</a></li>
+                <li>&raquo; <a href="info/wladyslaw_jagiello.html" class="aInfo">Władysław Jagiełło</a></li>
+                <li>&raquo; <a href="info/witold.html" class="aInfo">Witold</a></li>
+                <li>&raquo; <a href="info/wladyslaw_warnenczyk.html" class="aInfo">Władysław Warneńczyk</a></li>
+                <li>&raquo; <a href="info/kazimierz_jagiellonczyk.html" class="aInfo">Kazimierz Jagiellończyk</a></li>
+                <li>&raquo; <a href="info/wladyslaw_ii.html" class="aInfo">Władysław II</a></li>
+                <li>&raquo; <a href="info/kazimierz.html" class="aInfo">Kazimierz</a></li>
+                <li>&raquo; <a href="info/jan_olbracht.html" class="aInfo">Jan Olbracht</a></li>
+                <li>&raquo; <a href="info/aleksander.html" class="aInfo">Aleksander</a></li>
+                <li>&raquo; <a href="info/zygmunt_stary.html" class="aInfo">Zygmunt Stary</a></li>
+                <li>&raquo; <a href="info/fryderyk.html" class="aInfo">Fryderyk</a></li>
+                <li>&raquo; <a href="info/ludwik_ii-lajosz.html" class="aInfo">Ludwik II (Lajosz)</a></li>
+                <li>&raquo; <a href="info/zygmunt_august.html" class="aInfo">Zygmunt August</a></li>
+                <li>&raquo; <a href="info/katarzyna.html" class="aInfo">Katarzyna</a></li>
+                <li>&raquo; <a href="info/anna_jagiellonska.html" class="aInfo">Anna Jagiellońska</a></li>
+                <li>&raquo; <a href="info/zygmunt_iii_waza.html" class="aInfo">Zygmunt III Waza</a></li>
+            </ul>
         </div>
 
-        <table id="drzewo">
-            <tr>
-                <td>
-                    <img src="drzewo.png" alt="Drzewo Dynastii Jagiellonów" id="schemat">
-                </td>
-            </tr>
-        </table>
+        <div id="drzewo">
+            <img src="drzewo.png" alt="Drzewo Dynastii Jagiellonów" id="schemat">
+        </div>
 
+        <div id="placeholder"></div>
+            
         <footer>
-            <a href="authors.html" id="autorzy">Autorzy &raquo;</a>
+            <a href="authors.html" id="footerp">Autorzy &raquo;</a>
         </footer>
     </body>
 </html>

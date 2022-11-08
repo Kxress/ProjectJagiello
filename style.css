@@ -10,7 +10,7 @@ body{
 div{
     background: rgba(0, 0, 0, 0.5);
     opacity: 0;
-    animation: 3s appearnfloat forwards;
+    animation: appearFloat 3s forwards;
 }
 
 a{
@@ -18,20 +18,66 @@ a{
     text-decoration: none;
 }
 
+ul{
+    list-style-type: none;
+}
+
 #header{
     margin: auto;
     text-align: center;
-    width: 1000px;
+    width: 50%;
+    height: 19vh;
     border: 2px solid white;
     border-radius: 10px;
     margin-top: 50px;
-    font-size: 40px;
+    font-size: 2vw;
     font-weight: bold;
+}
+
+#headerExpansion{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 2vw;
+    font-weight: bold;
+    opacity: 1;
+    max-height: 170px;
+    animation: borderExpansion 1s forwards;
+}
+
+#lista{
+    visibility: hidden;
+}
+
+#listaExpansion{
+    opacity: 0;
+    animation: appear 1s ease .3s forwards;
+}
+
+#title, .aInfo{
+    transition: color .4s ease-in-out;
+}
+
+#title:hover, .aInfo:hover{
+    cursor: pointer;
+    color: red;
+}
+
+#disclaimer{
+    font-size: 25px;
+}
+
+.aInfo{
+    text-align: justify;
 }
 
 #drzewo{
     position: relative;
     top: 20px;
+    width: 80%;
     margin: auto;
     text-align: center;
     border: 2px solid white;
@@ -41,22 +87,26 @@ a{
 }
 
 #schemat{
-    width: 1474px;
-    height: 2339px;
+    width: 95%;
+}
+
+#placeholder{
+    visibility: hidden;
+    height: 70px;
 }
 
 footer{
-    margin-top: 60px;
+    position: fixed;
     padding-top: 10px;
+    bottom: 0;
     font-size: 30px;
-    clear: both;
     width: 100%;
     height: 40px;
     text-align: center;
     background-color: #8A9BA5;
 }
 
-#autorzy{
+#footerp{
     box-shadow: inset 0 0 0 0 white;
     margin: 0 -.25rem;
     padding: 0 .25rem;
@@ -64,7 +114,7 @@ footer{
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-#autorzy:hover{
+#footerp:hover{
     box-shadow: inset 160px 0 0 0 white;
     color: #8A9BA5;
 }
@@ -72,30 +122,41 @@ footer{
 #authors{
     margin: auto;
     text-align: center;
-    width: 1000px;
+    width: 50%;
+    padding: 20px 0 20px 0;
     border: 2px solid white;
     border-radius: 10px;
     margin-top: 50px;
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: bold;
-    line-height: 85.5px;
+    line-height: 10vh;
     margin-top: 40px;
     animation: appear 3s forwards;
 }
 
-#laczak{
-    color: rgb(245, 169, 182);
+.author{
+    transition: letter-spacing .5s ease-in-out;
 }
 
-@keyframes appearnfloat {
-    100% {
+.author:hover{
+    letter-spacing: 10px;
+}
+
+@keyframes appearFloat{
+    100%{
         opacity: 1;
         margin-top: 20px;
     }
 }
 
-@keyframes appear {
-    100% {
+@keyframes appear{
+    100%{
         opacity: 1;
+    }
+}
+
+@keyframes borderExpansion{
+    100%{
+        max-height: 1200px;
     }
 }
